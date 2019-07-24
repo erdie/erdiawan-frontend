@@ -1,8 +1,6 @@
-# Novia Frontend
+# Erdiawan Frontend
 
-Web frontend-nya Novia
-
-Semangat skripsi!!!
+web frontend for erdiawan.com
 
 ## Install and Run
 ```bash
