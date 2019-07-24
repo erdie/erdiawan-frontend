@@ -1,0 +1,31 @@
+{
+  "name": "erdiawan-frontend",
+  "version": "1.0.0",
+  "description": "frontend for erdiawan.com",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erdie/erdiawan-frontend.git"
+  },
+  "keywords": [
+    "erdiawan",
+    "js",
+    "css",
+    "html5"
+  ],
+  "author": "Anna Erdiawan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erdie/erdiawan-frontend/issues"
+  },
+  "homepage": "https://github.com/erdie/erdiawan-frontend#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
