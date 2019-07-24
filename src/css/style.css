@@ -226,6 +226,14 @@ body {
       #portofolio .portofolio-group .portofolio-card p a:hover {
         color: #51E3D4; }
 
+footer p {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px; }
+  footer p span {
+    color: red; }
+
 html, body {
   margin: 0;
   padding: 0;
