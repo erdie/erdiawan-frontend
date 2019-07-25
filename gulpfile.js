@@ -6,15 +6,15 @@ const sass = require('gulp-sass');
 function style() {
     return gulp.src('src/sass/style.sass') 
     //.pipe(sass().on('error', sass.logError))
-    .pipe(sass())
-    //.pipe(sass({outputStyle: 'compressed'})) //compile minify
+    // .pipe(sass())
+    .pipe(sass({outputStyle: 'compressed'})) //compile minify
     .pipe(gulp.dest('src/css'))
     .pipe(browserSync.stream());
 }
 
 //move the javascript files into src/js folder
 function copyjs() {
-    return gulp.src('node_modules/chart.js/dist/Chart.min.js')
+    return gulp.src('node_modules/lazysizes/lazysizes.min.js')
     .pipe(gulp.dest('src/js'))
     .pipe(browserSync.stream());
 }
