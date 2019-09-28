@@ -21,19 +21,21 @@
             .desc
                 font-size: 16px
                 line-height: 1.5
-        .hero-image
+                font-weight: 300
+        .hero-image  
             margin-top: -50px
-            max-width: 350px 
+            max-width: 300px 
             width: 100%
             text-align: center
             order: 2
             img
-                max-width: 350px
+                max-width: 300px
                 width: 100%
                 margin-left: auto
                 margin-right: auto
                 filter: grayscale(100%)
                 transition: 0.5s
+                border-radius: 10%
             img:hover
                 filter: grayscale(0%)
                 transition: 0.5s
@@ -76,13 +78,13 @@
                         margin: 0 5px
 
 
-#portofolio
+#portfolio
     padding: 50px 0
-    .portofolio-group
+    .portfolio-group
         display: flex
         flex-direction: row
         justify-content: space-between
-        .portofolio-card
+        .portfolio-card
             margin: 15px 0
             h3
                 font-weight: bold
@@ -133,6 +135,6 @@ footer
             .footer-group
                 flex-direction: column
 
-    #portofolio
-        .portofolio-group
+    #portfolio
+        .portfolio-group
             flex-direction: column
