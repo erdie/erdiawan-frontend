@@ -4,12 +4,13 @@
 @import components/icons
 @import components/container
 @import components/flex
-@import components/grid
+@import components/grid-mixin
 @import components/typography
 
 // Pages
 @import pages/home
 @import pages/journal
+@import pages/journal-detail
 
 @include respond(phone)
     @include item--phone()
@@ -34,7 +35,8 @@
     @include text--desktop()
     @include container--desktop()
 
-html, body
+body
     margin: 0
     padding: 0
+    clear: both
     scroll-behavior: smooth 
