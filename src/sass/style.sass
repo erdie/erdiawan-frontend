@@ -39,4 +39,24 @@ body
     margin: 0
     padding: 0
     clear: both
-    scroll-behavior: smooth 
+    scroll-behavior: smooth
+
+@media (prefers-color-scheme: light)
+    body
+        background-color: white
+        color: black
+        #hero
+            .hero-group
+                .hero-title
+                    .hide-light
+                        display: none
+
+@media (prefers-color-scheme: dark)
+    body
+        background-color: black
+        color: white
+        #hero
+            .hero-group
+                .hero-title
+                    .hide-dark
+                        display: none
