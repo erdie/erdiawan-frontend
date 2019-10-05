@@ -1,11 +1,13 @@
 // Components
 @import components/breakpoints
 @import components/button
+@import components/colors
 @import components/icons
 @import components/container
 @import components/flex
 @import components/grid-mixin
 @import components/typography
+@import components/dark-mode 
 
 // Pages
 @import pages/home
@@ -35,28 +37,8 @@
     @include text--desktop()
     @include container--desktop()
 
-body
+html, body
     margin: 0
     padding: 0
     clear: both
     scroll-behavior: smooth
-
-@media (prefers-color-scheme: light)
-    body
-        background-color: white
-        color: black
-        #hero
-            .hero-group
-                .hero-title
-                    .hide-light
-                        display: none
-
-@media (prefers-color-scheme: dark)
-    body
-        background-color: black
-        color: white
-        #hero
-            .hero-group
-                .hero-title
-                    .hide-dark
-                        display: none
