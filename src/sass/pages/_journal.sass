@@ -40,6 +40,51 @@
                     margin: 0 5px
                     a
                         text-decoration: none
+
+#navigation-mobile
+    display: none
+
+#navigation-mobile
+    background-color: $primary-color
+    .navigation-group
+        .menu
+            .brand
+                img 
+                    height: 45px
+                    transform: rotate(-3deg)
+            color: #ffffff
+            ul
+                list-style: none
+                padding: 0
+                margin-left: 40px
+                .active
+                    font-weight: bold
+                li
+                    display: inline-block
+                    margin: 0 8px
+                    a
+                        color: #ffffff
+                        text-transform: uppercase
+                        text-decoration: none
+    .social
+        color: #ffffff
+        text-align: center
+        padding: 2px 0 5px 0
+        small
+            padding: 0
+            margin: 2px 0 3px 4px
+            font-size: 12px
+            display: inline-block
+        ul
+            list-style: none
+            padding: 0
+            margin: 0 0 5px 0
+            display: inline-block
+            li
+                display: inline-block
+                margin: 0 5px
+                a
+                    text-decoration: none
         
 #blog
     padding: 50px 0
@@ -76,3 +121,18 @@
     .blog-card:hover
         transform: translateY(-10px)
         transition: 0.3s
+
+@include respond(phone)
+    #navigation
+        display: none
+    #navigation-mobile
+        display: block
+        .social-mobile
+            background-color: #5b64a0
+            .social
+                transform: scale(0.98)
+        .menu
+            transform: scale(0.9)
+    footer
+        p
+            transform: scale(0.9)

@@ -50,3 +50,25 @@
         line-height: 1.6
         font-weight: 300
         font-size: 18px
+
+
+@include respond(phone)
+    #blog-detail
+        .breadcrumb
+            transform: scale(0.9)
+        .blog-title
+            .title
+                transform: scale(0.9)
+                h1
+                    line-height: 1.4 !important
+        .blog-author
+            transform: scale(0.9)
+        .blog-image
+            img
+                border-radius: 0
+        .blog-article
+            transform: scale(0.9)
+            margin-top: -80px
+
+    footer
+        transform: scale(0.9)
